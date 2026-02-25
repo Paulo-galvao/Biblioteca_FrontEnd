@@ -1,13 +1,12 @@
-import DashFrame from "../../components/dashboard/DashFrame";
 import DashHeader from "../../components/dashboard/DashHeader";
 import DashPath from "../../components/dashboard/DashPath";
 
 function Dashboard() {
   return (
-    <DashFrame>
+    <div className="m-2 space-y-5">
       <DashPath />
       <DashHeader />
-    </DashFrame>
+    </div>
   );
 }
 

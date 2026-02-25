@@ -11,6 +11,7 @@ import { storeBook } from "../../services/book-store.service";
 import DashPath from "../../components/dashboard/DashPath";
 import FormBorder from "../../components/FormBorder";
 import DashFrame from "../../components/dashboard/DashFrame";
+import TextArea from "../../components/form/TextArea";
 
 function Store() {
   const navigate = useNavigate();
@@ -45,7 +46,10 @@ function Store() {
           </div>
 
           <div className="relative">
-            <Input label="Descrição" register={register("description")} />
+            <TextArea 
+              label="Descrição"
+              register={register("description")}
+            />
             <Error errors={errors} name="description" />
           </div>
 

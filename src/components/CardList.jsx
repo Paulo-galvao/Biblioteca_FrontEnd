@@ -30,8 +30,8 @@ function Card({ title, path }) {
   if (error) return <p>{error}</p>;
   return (
     <div>
-        <h2 className="">{title}</h2>
-        <div className="flex gap-2 md:grid grid-cols-5 overflow-x-scroll ">
+        <h2 className="text-[1.3em] pb-2 border-b border-gray-500 mb-2">{title}</h2>
+        <div className="flex gap-2 md:grid grid-cols-5 overflow-x-scroll sm:overflow-auto">
         {books.map((book) => (
             <div key={book.id} className="min-w-25 h-62.5">
             <NavLink to={`/books/${book.id}`}>

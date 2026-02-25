@@ -1,7 +1,6 @@
 import { NavLink } from "react-router";
 import DashCardButton from "./DashCardButton";
 import {
-  Description,
   Dialog,
   DialogPanel,
   DialogTitle,
@@ -63,9 +62,6 @@ function DashCards({ userBooks }) {
                   <DialogTitle className="font-bold">
                     Remover Postagem
                   </DialogTitle>
-                  {/* <Description>
-                    This will permanently deactivate your account
-                  </Description> */}
                   <p>
                     Tem certeza que deseja remover permanentemente esse livro da coleção?
                   </p>

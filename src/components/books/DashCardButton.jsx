@@ -7,7 +7,7 @@ function DashCardButton({ option, children, onClick }) {
   }
   return (
     <button onClick={onClick}
-      className={`${buttonColor} flex cursor-pointer w-full justify-center rounded-md px-3 py-1.5 text-sm font-semibold text-white shadow-xs  `}
+      className={`${buttonColor}  flex cursor-pointer w-full justify-center rounded-md px-3 py-1.5 text-sm font-semibold text-white shadow-xs  `}
     >
       {children}
     </button>

@@ -53,7 +53,8 @@ function UpdateUserPassword() {
         },
       );
 
-      alert(response.data.data.message);
+      console.log(response.data.message);
+      alert(response.data.message);
       fetchUser();
       navigate("/dashboard");
     } catch (error) {
