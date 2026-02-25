@@ -1,7 +1,6 @@
-import React from 'react'
 import { MdMenuBook } from 'react-icons/md'
 import { Link } from 'react-router'
-import LoginForm from '../../Components/form/LoginForm'
+import LoginForm from '../../components/form/LoginForm'
 
 
 function Login() {
