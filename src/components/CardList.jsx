@@ -2,6 +2,7 @@ import { NavLink } from "react-router";
 import Rate from "./Rate";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import ClassicLoader from "./ClassicLoader";
 
 const api_url = import.meta.env.VITE_API_URL;
 
@@ -26,7 +27,9 @@ function Card({ title, path }) {
     fetchApi();
   });
 
-  if (loading) return <p>...</p>;
+  if (loading) return <ClassicLoader />;
+  
+
   if (error) return <p>{error}</p>;
   return (
     <div>
